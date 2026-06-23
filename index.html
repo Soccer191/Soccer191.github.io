@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Param | Engineering Portfolio</title>
+    <style>
+        /* Modern Engineering Dark & Tech Blue Palette */
+        :root {
+            --bg-primary: #0a192f;
+            --bg-secondary: #172a45;
+            --text-light: #f4f7fb;
+            --text-dark: #8892b0;
+            --accent-blue: #38bdf8;
+            --accent-green: #34d399;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-light);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--bg-secondary);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-blue);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        header .location {
+            color: var(--text-dark);
+            font-size: 1rem;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--bg-secondary);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--accent-blue);
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        /* List Styling */
+        ul {
+            list-style-type: none;
+            margin-bottom: 15px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+        }
+
+        /* Contest Badges */
+        .badge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .badge {
+            background: rgba(56, 189, 248, 0.05);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .badge .score {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-green);
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Engineering Diagram Component */
+        .diagram-container {
+            background: #020c1b;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-blue);
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+
+        .diagram-title {
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .diagram-text {
+            color: var(--accent-green);
+            white-space: pre;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* Skills Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: rgba(52, 211, 153, 0.1);
+            border: 1px solid rgba(52, 211, 153, 0.2);
+            color: var(--accent-green);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            background: #020c1b;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Param</h1>
+        <div class="subtitle">IB Student & Aspiring Nuclear Engineer</div>
+        <div class="location">Cameron Heights Collegiate Institute • Kitchener, ON</div>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Grade 9 International Baccalaureate (IB) student at Cameron Heights. 
+                I combine strong mathematical capabilities with an interest in automation, system logics, 
+                and clean energy solutions. 
+            </p>
+            <p>
+                My ultimate goal is to study engineering at the university level and transition into the 
+                rm nuclear energy field, contributing to advanced reactor design and grid reliability.
+            </p>
+        </section>
+
+        <section id="achievements">
+            <h2>Mathematical Achievements</h2>
+            <p>Proven problem-solving capabilities through Waterloo University mathematics contests:</p>
+            
+            <div class="badge-grid">
+                <div class="badge">
+                    <strong>Grade 7 Gauss</strong>
+                    <span class="score">100 / 100</span>
+                </div>
+                <div class="badge">
+                    <strong>Grade 8 Gauss</strong>
+                    <span class="score">138 / 150</span>
+                </div>
+                <div class="badge">
+                    <strong>Grade 9 Pascal</strong>
+                    <span class="score">120 / 150</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Engineering Case Studies</h2>
+            
+            <div style="margin-top: 10px;">
+                <h3>Smart Garden Automated Irrigation System</h3>
+                <p style="font-size: 0.9rem; color: var(--accent-blue); margin-bottom: 10px;">Grade 8 Capstone Project • Feedback Control Systems</p>
+                
+                <p>
+                    Developed a fully automated closed-loop ecosystem controller designed to maintain strict soil optimization 
+                    ranges without human intervention.
+                </p>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">System Logical Architecture Map</div>
+                    <div class="diagram-text">
+[ Soil System ] ──(Moisture Sensor)──> [ Logic Controller ]
+                                                │
+       ┌────────────────────────────────────────┴────────────────────────────────────────┐
+       ▼ (If Too Dry)                                                                    ▼ (If Too Wet)
+[ Trigger Water Pump ]                                                            [ Open Drainage Valve ]
+       │                                                                                 │
+       └───────────────────────────────────> [ Ideal Range Met ] <───────────────────────┘
+                                                     │
+                                            [ System Sleep Mode ]</div>
+                </div>
+
+                <p><strong>Core Logic & Features Implemented:</strong></p>
+                <ul>
+                    <li><strong>Continuous Telemetry:</strong> System constantly reads real-time moisture conditions via sensors.</li>
+                    <li><strong>Dual-Action Response:</strong> Active components inject water during deficit states, while an auxiliary protocol triggers extraction steps if oversaturation is detected.</li>
+                    <li><strong>Energy Optimization:</strong> Automated shut-off cuts power as soon as target equilibrium metrics are reached.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills Inventory</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Closed-Loop Automation</div>
+                <div class="skill-tag">Logical System Architecture</div>
+                <div class="skill-tag">Python (Foundations)</div>
+                <div class="skill-tag">Advanced Algebra</div>
+                <div class="skill-tag">Data Analysis</div>
+                <div class="skill-tag">Technical Documentation</div>
+            </div>
+        </section>
+
+        <section id="future">
+            <h2>Project Pipeline (2026-2027)</h2>
+            <ul>
+                <li><strong>Numerical Nuclear Reactor Simulation:</strong> Building a mathematical modeling program in Python to calculate safe power thresholds.</li>
+                <li><strong>Physics Simulator:</strong> Scripting kinematics calculators to automate physics equations.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Param | Engineering Portfolio. Built with clean HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
